@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.saiyantrainer.dbzfit',
+  appId: 'com.capsulecorp.dbzfit',
   appName: 'Saiyan Warrior Trainer',
   webDir: 'dist',
   server: {
