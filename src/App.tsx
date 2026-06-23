@@ -79,8 +79,11 @@ export default function App() {
   // Request browser Notification permissions on launch safely
   useEffect(() => {
     try {
-      if ('Notification' in window && Notification && Notification.permission === 'default') {
-        Notification.requestPermission().catch(() => {});
+      if (typeof window !== 'undefined' && 'Notification' in window) {
+        const winNotification = (window as any).Notification;
+        if (winNotification && winNotification.permission === 'default') {
+          winNotification.requestPermission().catch(() => {});
+        }
       }
     } catch (err) {
       console.warn('Notifications not supported or blocked by sandbox permissions:', err);

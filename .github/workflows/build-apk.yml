@@ -27,7 +27,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Node Dependencies
-        run: npm ci
+        run: npm install
 
       - name: Compile and Sync Mobile App
         run: npm run mobile:build
