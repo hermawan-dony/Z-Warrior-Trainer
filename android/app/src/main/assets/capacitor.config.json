@@ -1,0 +1,8 @@
+{
+	"appId": "com.capsulecorp.dbzfit",
+	"appName": "Dragon Ball Push Up Tracker",
+	"webDir": "dist",
+	"server": {
+		"androidScheme": "https"
+	}
+}

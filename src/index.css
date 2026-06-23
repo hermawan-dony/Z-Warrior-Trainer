@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #080808;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Overrides */
+html:not(.dark) body {
+  background-color: #f6f6f6;
+  color: #1c1c1c;
+}
+
+/* Bento Card Design Theme styles */
+.bento-card {
+  background: #121212;
+  border: 1px solid #222222;
+  border-radius: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.bento-card:hover {
+  transform: translateY(-2px);
+  border-color: #ff900088;
+  box-shadow: 0 10px 40px rgba(255, 144, 0, 0.08);
+}
+
+html:not(.dark) .bento-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  color: #1a1a1a;
+}
+
+html:not(.dark) .bento-card:hover {
+  border-color: #ff9000bb;
+  box-shadow: 0 10px 30px rgba(255, 144, 0, 0.06);
+}
+
+/* Scouter Orange Accent line for widgets */
+.scouter-border {
+  border-left: 5px solid #FF9000 !important;
+}
+
+/* Glowing Aura effect on Saiyan widgets */
+.orange-glow {
+  box-shadow: 0 0 25px rgba(255, 144, 0, 0.15);
+}
+
+html:not(.dark) .orange-glow {
+  box-shadow: 0 0 25px rgba(255, 144, 0, 0.08);
+}
+
+/* Bento sub-labels style */
+.label-caps {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #a1a1aa;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+html:not(.dark) .label-caps {
+  color: #616161;
+}
+
+/* Stat Display values */
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Orange text and elements */
+.text-accent {
+  color: #FF9000;
+}
+
+.bg-accent {
+  background-color: #FF9000;
+}
+
+.border-accent {
+  border-color: #FF9000;
+}
+
+/* High-contrast and responsive design scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 144, 0, 0.3);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 144, 0, 0.6);
+}

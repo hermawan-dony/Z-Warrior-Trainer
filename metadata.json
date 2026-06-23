@@ -1,0 +1,6 @@
+{
+  "name": "Saiyan Warrior Trainer",
+  "description": "A Dragon Ball themed push-up reminder and workout tracker featuring customizable intervals, rest timers, leveling up and character selection, statistics, simulated multiplayer battles, dark mode, offline capability, and CSV/PDF data export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
